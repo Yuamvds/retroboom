@@ -4,14 +4,13 @@
     background-color: black;
     height: 70vh;
     padding: 50px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
-.encabezado .logo{
-    font-size: 4vw;
-    transform: rotate(-10deg);
+.encabezado .logo img{
+    width: 25vw;
     position: relative;
-    bottom: 30px;
+    bottom: 4vw;
 }
 .encabezado .logo:hover{
     border: none;
@@ -22,6 +21,10 @@
     transition: ease .09s;
     z-index: 7;
 }
+.encabezado div{
+    display: flex;
+    gap: 30px;
+}
 .encabezado .menu-list{
     display: flex;
     list-style-type: none;
@@ -31,35 +34,53 @@
     bottom: 20px;
 }
 .encabezado a:hover{
-    border-bottom: solid white 5px;
+    border-bottom: solid white 3px;
 }
 .encabezado svg{
     z-index: 7;
     color: whitesmoke;
     display: none;
 }
+.encabezado .logo-celular{
+    display: none;
+}
+.fondo-banner-celular{
+    display: none;
+}
 @media screen and (max-width: 1000px) {
     .encabezado .menu-list{
         display: none;
     }
-    .encabezado .logo{
-        transform: rotate(0deg);
-        top: -5px;
-        font-size: 35px;
-    }
     .encabezado svg{
         display: block;
+        color: black;
     }
     .encabezado{
         justify-content: space-between;
         align-items: center;
         padding: 10px;
         height: auto;
+        background-color: white;
+    }
+    .encabezado .logo{
+        display: none;
+    }
+    .encabezado .logo-celular{
+        display: block;
+    }
+    .encabezado .logo-celular img{
+        width: 250px;
     }
 
 }
-@media screen and (max-width: 500px) {
-    .encabezado .logo{
-        font-size: 30px;
+@media screen and (max-width: 500px){
+    .fondo-banner-celular{
+        display: block;
+        width: 100%;
+        height: 35vw;
+        background-color: black;
+    }
+    .encabezado .logo-celular img{
+        width: 200px;
     }
 }

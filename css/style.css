@@ -21,7 +21,9 @@ html{
         bottom: 0;
     }
     .banner img{
-        width: 100%;
+        width: 80%;
+        position: relative;
+        bottom: 20vw;
     }
 
 }
