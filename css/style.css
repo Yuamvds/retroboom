@@ -16,3 +16,12 @@ html{
     height: auto;
     z-index: 1;
 }
+@media screen and (max-width: 1000px) {
+    .banner{
+        bottom: 0;
+    }
+    .banner img{
+        width: 100%;
+    }
+
+}

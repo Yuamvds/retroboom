@@ -11,7 +11,7 @@
     font-size: 4vw;
     transform: rotate(-10deg);
     position: relative;
-    bottom: 4vh;
+    bottom: 30px;
 }
 .encabezado .logo:hover{
     border: none;
@@ -27,7 +27,39 @@
     list-style-type: none;
     gap: 50px;
     z-index: 7;
+    position: relative;
+    bottom: 20px;
 }
 .encabezado a:hover{
     border-bottom: solid white 5px;
+}
+.encabezado svg{
+    z-index: 7;
+    color: whitesmoke;
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .encabezado .menu-list{
+        display: none;
+    }
+    .encabezado .logo{
+        transform: rotate(0deg);
+        top: -5px;
+        font-size: 35px;
+    }
+    .encabezado svg{
+        display: block;
+    }
+    .encabezado{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .encabezado .logo{
+        font-size: 30px;
+    }
 }
