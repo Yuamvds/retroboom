@@ -1,0 +1,33 @@
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 70vh;
+    padding: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.encabezado .logo{
+    font-size: 4vw;
+    transform: rotate(-10deg);
+    position: relative;
+    bottom: 4vh;
+}
+.encabezado .logo:hover{
+    border: none;
+}
+.encabezado a{
+    text-decoration: none;
+    color: white;
+    transition: ease .09s;
+    z-index: 7;
+}
+.encabezado .menu-list{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    z-index: 7;
+}
+.encabezado a:hover{
+    border-bottom: solid white 5px;
+}
