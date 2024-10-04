@@ -10,7 +10,7 @@
 .encabezado .logo img{
     width: 25vw;
     position: relative;
-    bottom: 4vw;
+    bottom: 3vw;
 }
 .encabezado .logo:hover{
     border: none;
@@ -81,6 +81,6 @@
         background-color: black;
     }
     .encabezado .logo-celular img{
-        width: 300px;
+        width: 280px;
     }
 }

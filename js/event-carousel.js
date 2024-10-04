@@ -12,6 +12,11 @@ $(document).ready(function(){
             settings: {
                 slidesToShow: 2
             }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
         }]
     });
 });
