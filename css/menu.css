@@ -4,7 +4,7 @@
     background-color: black;
     height: 70vh;
     padding: 50px;
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 .encabezado .logo img{
@@ -81,6 +81,6 @@
         background-color: black;
     }
     .encabezado .logo-celular img{
-        width: 250px;
+        width: 300px;
     }
 }

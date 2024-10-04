@@ -3,13 +3,19 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+main{
+    height: auto;
 }
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 60vh;
+    bottom: 28vw;
+    margin-bottom: -20vw;
+    
 }
 .banner img{
     width: 90%;
@@ -19,6 +25,7 @@ html{
 @media screen and (max-width: 1000px) {
     .banner{
         bottom: 0;
+        margin-bottom: 0;
     }
     .banner img{
         width: 100%;
@@ -35,4 +42,43 @@ html{
         bottom: 20vw;
     }
 
+}
+
+.eventos{
+    position: relative;
+    top: 0;
+    z-index: 8;
+    text-align: center;
+}
+.eventos .event-slider .slider div img{
+    width: 25vw;
+    text-align: center;
+  }
+.slick-slide {
+      margin-inline: 5px;
+}
+.slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+}
+.slick-initialized .slick-slide {
+      display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .eventos{
+        margin-top: 10vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .eventos .event-slider .slider div img{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .eventos{
+        top: -10vw;
+    }
 }
