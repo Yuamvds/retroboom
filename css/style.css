@@ -21,6 +21,14 @@ html{
         bottom: 0;
     }
     .banner img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner{
+        bottom: 0;
+    }
+    .banner img{
         width: 80%;
         position: relative;
         bottom: 20vw;
