@@ -82,6 +82,9 @@ main{
     .eventos{
         top: -10vw;
     }
+    .eventos .event-slider .slider div img{
+        width: 80vw;
+    }
 }
 
 
