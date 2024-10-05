@@ -112,6 +112,22 @@ main{
     width: 20vw;
     border-radius: 5px;
 }
+.galeria-colecciones button{
+    margin-block: 90px;
+    border: none;
+    width: 30vw;
+    height: 5vw;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 750;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+    transition: .4s;
+}
+.galeria-colecciones button:hover{
+    background-color: #00ff93;
+    color: black;
+}
 @media screen and (max-width: 1000px) {
     .galeria-colecciones .fotos{
         grid-template-columns: repeat(2, 1fr);
@@ -119,6 +135,12 @@ main{
     }
     .galeria-colecciones .fotos img{
         width: 40vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .galeria-colecciones button{
+        width: 40vw;
+        height: 50px;
     }
 }
 @media screen and (max-width: 600px) {
