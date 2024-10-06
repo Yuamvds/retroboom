@@ -8,6 +8,10 @@ html{
 main{
     height: auto;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .banner{
     display: flex;
     justify-content: center;
@@ -21,6 +25,10 @@ main{
     width: 90%;
     height: auto;
     z-index: 1;
+}
+
+.cuadros-colores{
+    display: none;
 }
 @media screen and (max-width: 1000px) {
     .banner{
@@ -42,6 +50,26 @@ main{
         bottom: 20vw;
     }
 
+    .cuadros-colores{
+        display: block;
+        position: absolute;
+    }
+    .verde{
+        width: 17vw;
+        height: 20vw;
+        background-color: #00ff93;
+        position: relative;
+        bottom: 38.7vw;
+        left: 6.5vw;
+    }
+    .rojo{
+        width: 17vw;
+        height: 20vw;
+        background-color: rgb(241, 61, 61);
+        position: relative;
+        bottom: 59vw;
+        left: 76vw;
+    }
 }
 
 .eventos{
@@ -50,6 +78,7 @@ main{
     z-index: 8;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 5vw;
 }
 .eventos .event-slider .slider div img{
     width: 25vw;
@@ -157,6 +186,12 @@ main{
         width: 80vw;
     }
 }
+@media screen and (max-width: 400px) {
+    .galeria-colecciones h2{
+        font-size: clamp(1.8rem, 4vw, 1.4rem);
+    }
+}
+
 
 
 .banner-collage{
@@ -172,6 +207,14 @@ main{
 }
 .banner-collage img{
     width: 65vw;
+}
+@media screen and (max-width: 500px) {
+    .banner-collage{
+        height: 50vw;
+    }
+    .banner-collage img{
+        width: 75vw;
+    }
 }
 
 
@@ -191,12 +234,81 @@ main{
 @media screen and (max-width: 700px) {
     .video iframe{
         width: 100%;
-        height: 55vw;
+        height: 60vw;
         margin-block: 0;
     }
 }
 @media screen and (max-width: 450px) {
     .video iframe{
         border: none;
+    }
+}
+
+.store{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 10vw;
+}
+.store .elements{
+    text-align: center;
+}
+
+.store .elements div img{
+    width: 25vw;
+    margin-bottom: 50px;
+}
+.store .elements{
+    color: white;
+    font-weight: 750;
+}
+.store .elements div{
+    font-size: 2vw;
+}
+.store .elements div button{
+    width: 20vw;
+    height: 4vw;
+    border: none;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 2vw;
+    font-weight: 650;
+    transition: .4s;
+    letter-spacing: 2px;
+}
+.store .elements div button:hover{
+    background-color: #00ff93;
+    color: black;
+}
+@media screen and (max-width: 767px) {
+    .store .elements div{
+        margin-bottom: 8vw;
+    }
+    .store .elements div img{
+        width: 50vw;
+    }
+    .store .elements div p{
+        font-size: 20px;
+    }
+    .store .elements div button{
+        width: 40vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .store .elements div{
+        margin-bottom: 8vw;
+    }
+    .store .elements div img{
+        width: 55vw;
+    }
+    .store .elements div p{
+        font-size: 20px;
+    }
+    .store .elements div button{
+        width: 50vw;
+        height: 10vw;
+        font-size: 4vw;
     }
 }

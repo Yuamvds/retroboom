@@ -1,0 +1,68 @@
+.pie_pagina{
+    background-size: cover;
+    background-repeat: no-repeat;    
+    text-align: center;
+    padding-block: 90px;
+    color: black;
+}
+.pie_pagina h2,
+.pie_pagina p{
+    font-weight: 700;
+}
+.pie_pagina h2{
+    font-size: 50px;
+}
+.pie_pagina p{
+    font-size: 25px;
+}
+.pie_pagina ul{
+    list-style-type: none;
+    margin-block: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    font-size: 41px;
+    color: white;
+}
+.pie_pagina ul li{
+    background-color: blueviolet;
+    padding: 9px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    transition: .4s;
+}
+.pie_pagina ul li:hover{
+    background-color: #00ff93;
+}
+.pie_pagina ul li i{
+    transition: .4s;
+}
+.pie_pagina ul li i:hover{
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    .pie_pagina h2{
+        font-size: 30px;
+    }
+    .pie_pagina p{
+        font-size: 15px;
+    }
+    .pie_pagina ul{
+        font-size: 31px;
+    }
+    .pie_pagina ul li{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pie_pagina h2{
+        font-size: 25px;
+    }
+    .pie_pagina p{
+        font-size: 14px;
+    }
+
+}
