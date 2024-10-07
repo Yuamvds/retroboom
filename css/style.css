@@ -212,6 +212,11 @@ a{
 .banner-collage img{
     width: 60vw;
 }
+@media screen and (max-width: 600px) {
+    .banner-collage{
+        background-image: url(../img/01papperSmall.jpg);
+    }
+}
 @media screen and (max-width: 500px) {
     .banner-collage{
         height: 50vw;
