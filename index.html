@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/radio.css">
@@ -69,27 +70,27 @@
             <h2 class="titulo-galeria">Galeria de Colecciones</h2>
             <div class="fotos">
                 <a href="">
-                    <div><img src="img/galeria.jpg" alt="Colección"></div>
+                    <div data-aos="fade-up"><img src="img/galeria.jpg" alt="Colección"></div>
                 </a>
                 <a href="">
-                    <div><img src="img/galeria.jpg" alt="Colección"></div>
+                    <div data-aos="fade-up"><img src="img/galeria.jpg" alt="Colección"></div>
                 </a>
                 <a href="">
-                    <div><img src="img/galeria.jpg" alt="Colección"></div>
+                    <div data-aos="fade-up"><img src="img/galeria.jpg" alt="Colección"></div>
                 </a>
                 <a href="">
-                    <div><img src="img/galeria.jpg" alt="Colección"></div>
+                    <div data-aos="fade-up"><img src="img/galeria.jpg" alt="Colección"></div>
                 </a>
             </div>
             <a href="galeria.html"><button>Ver Más</button></a>
         </section>
 
         <section class="banner-collage" style="background-image: url(img/01papper.jpg);">
-            <img src="img/logo-collageboom.png" alt="Logotipo de retroboom en un collage">
+            <img src="img/logo-collageboom.png" alt="Logotipo de retroboom en un collage" data-aos="zoom-in">
         </section>
 
         <section class="video" style="background-image: url(img/fondo-video.jpg);">
-            <iframe id="video-subido" width="560" height="315"
+            <iframe data-aos="zoom-in-left" id="video-subido" width="560" height="315"
                 src="https://www.youtube.com/embed/1TEOcieL3J8?si=7nf2IiMXH6AWOK0I" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -98,19 +99,20 @@
 
         <section class="store" style="background-image: url(img/fondo_store.png);">
             <div class="row elements">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-out-up">
                     <img src="img/store.png" alt="Producto">
                     <h3>Nombre del producto</h3>
                     <p>$00.00</p>
-                    <a href=""><button class="whats" data-product="(Informacíon del producto)">Ir a whatsapp</button></a>
+                    <a href=""><button class="whats" data-product="(Informacíon del producto)">Ir a
+                            whatsapp</button></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-out-up">
                     <img src="img/store.png" alt="Producto">
                     <h3>Nombre del producto</h3>
                     <p>$00.00</p>
                     <a href=""><button class="whats" data-product="Producto 2">Ir a whatsapp</button></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-out-up">
                     <img src="img/store.png" alt="Producto">
                     <h3>Nombre del producto</h3>
                     <p>$00.00</p>
@@ -126,8 +128,11 @@
             <h2>Conectate con nosotros</h2>
             <p>Siguenos en nuestras redes sociales</p>
             <ul class="redes">
-                <li><a href="https://www.facebook.com/RetroboomColecciones"><i class="fi fi-brands-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/retroboomcolecciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fi fi-brands-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/RetroboomColecciones"><i class="fi fi-brands-facebook"></i></a>
+                </li>
+                <li><a
+                        href="https://www.instagram.com/retroboomcolecciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fi fi-brands-instagram"></i></a></li>
             </ul>
         </div>
     </footer>
@@ -157,10 +162,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/radio.js"></script>
     <script src="js/event-carousel.js"></script>
     <script src="js/video.js"></script>
     <script src="js/whats.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
