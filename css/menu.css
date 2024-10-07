@@ -47,30 +47,13 @@
 .fondo-banner-celular{
     display: none;
 }
-.menu-hamburguesa{
-    display: none;
-}
-#open-icon{
-    visibility: hidden;
-    font-size: 6vw;
-}
-#close-icon{
-    display: none;
-    font-size: 6vw;
-}
 @media screen and (max-width: 1000px) {
-    #open-icon{
-        visibility: visible;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    #close-icon{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
     .encabezado .menu-list{
+        display: none;
+    }
+    .encabezado svg{
+        display: block;
+        color: black;
     }
     .encabezado{
         justify-content: space-between;
