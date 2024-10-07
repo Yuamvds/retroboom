@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
@@ -22,7 +23,7 @@
         <nav class="encabezado">
             <a href="index.html" class="logo"><img src="img/LogoBlanco.png" alt="Logotipo de Retroboom"></a>
             <a href="index.html" class="logo-celular"><img src="img/LogoNegro.png" alt="Logotipo de Retroboom"></a>
-            <ul class="menu-list">
+            <ul class="menu-list" id="menu">
                 <li><a href="index.html" style="border-bottom: solid white 3px;">Inicio</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -33,11 +34,10 @@
                             target="_blank"><i class="fi fi-brands-instagram"></i></a></li>
                 </div>
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
+            <div class="menu-hamburguesa" id="hamburger-icon">
+                <button id="open-icon"><i class="fi fi-br-bars-staggered"></i></button>
+                <button id="close-icon"><i class="fi fi-br-x"></i></button>
+            </div>
         </nav>
     </header>
     <main>

@@ -173,6 +173,9 @@ a{
     }
 }
 @media screen and (max-width: 600px) {
+    .galeria-colecciones{
+        margin-top: 80px;
+    }
     .galeria-colecciones h2{
         font-size: clamp(2rem, 4vw, 2rem);
     }
@@ -196,8 +199,8 @@ a{
 
 .banner-collage{
     width: 100%;
-    height: 30vw;
-    margin-block: 10vw;
+    height: 50vw;
+    margin-block: 15vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -206,7 +209,7 @@ a{
     align-items: center;
 }
 .banner-collage img{
-    width: 65vw;
+    width: 75vw;
 }
 @media screen and (max-width: 500px) {
     .banner-collage{
