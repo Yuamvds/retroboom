@@ -214,16 +214,7 @@ a{
 }
 @media screen and (max-width: 600px){
     .banner-collage{
-        background-size: contain;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .banner-collage{
-        height: 50vw;
-    }
-    .banner-collage img{
-        width: 75vw;
+        background-size: non-auto;
     }
 }
 
