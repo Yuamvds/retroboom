@@ -214,16 +214,6 @@ a{
 .banner-collage img{
     width: 60vw;
 }
-@media screen and (max-width: 600px){
-    .banner-collage{
-        height: 55vw;
-        background-attachment: fixed;
-    }
-    .banner-collage img{
-        width: 70vw;
-    }
-}
-
 
 
 .video{
