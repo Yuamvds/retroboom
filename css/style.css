@@ -118,12 +118,13 @@ a{
 
 
 .galeria-colecciones{
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
     color: whitesmoke;
 }
 .galeria-colecciones h2{
