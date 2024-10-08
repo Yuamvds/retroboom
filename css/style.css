@@ -208,14 +208,15 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .banner-collage img{
     width: 60vw;
 }
 @media screen and (max-width: 600px){
     .banner-collage{
-        background-size: non-auto;
         height: 55vw;
+        background-attachment: fixed;
     }
     .banner-collage img{
         width: 70vw;
