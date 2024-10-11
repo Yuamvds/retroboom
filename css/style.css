@@ -226,6 +226,7 @@ a{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 .video iframe{
@@ -248,10 +249,19 @@ a{
 }
 
 .store{
+    text-align: center;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgb(17, 17, 17), rgb(17, 17, 17), rgb(17, 17, 17), black, black, black);
+    margin-top: 15vw;
     padding-block: 10vw;
+}
+.store .store-title{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 4vw;
+    position: relative;
+    bottom: 5vw;
 }
 .store .elements{
     text-align: center;
@@ -313,5 +323,29 @@ a{
         width: 50vw;
         height: 10vw;
         font-size: 4vw;
+    }
+}
+
+
+.store button{
+    margin-block: 90px;
+    border: none;
+    width: 30vw;
+    height: 5vw;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 750;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+    transition: .4s;
+}
+.store button:hover{
+    background-color: #00ff93;
+    color: black;
+}
+@media screen and (max-width: 700px) {
+    .store button{
+        width: 40vw;
+        height: 50px;
     }
 }

@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <nav class="encabezado">
+        <nav class="encabezado" id="inicio">
             <a href="index.html" class="logo"><img src="img/LogoBlanco.png" alt="Logotipo de Retroboom"></a>
             <a href="index.html" class="logo-celular"><img src="img/LogoNegro.png" alt="Logotipo de Retroboom"></a>
             <ul class="menu-list" id="menu">
@@ -68,8 +68,8 @@
             </div>
         </section>
 
-        <section class="galeria-colecciones" style="background-image: url(img/seccion-colecciones.jpg);">
-            <h2 class="titulo-galeria">Galeria de Colecciones</h2>
+        <section class="galeria-colecciones" style="background-image: url(img/fondo.jpg);">
+            <h2 class="titulo-galeria">COLECCIONES</h2>
             <div class="fotos">
                 <a href="">
                     <div data-aos="fade-up"><img src="img/galeria.jpg" alt="Colección"></div>
@@ -91,7 +91,7 @@
             <img src="img/logo-collageboom.png" alt="Logotipo de retroboom en un collage" data-aos="zoom-in">
         </section>
 
-        <section class="video" style="background-image: url(img/fondo-video.jpg);">
+        <section class="video" style="background-image: url(img/FondoVideo.jpg);">
             <iframe id="video-subido" width="560" height="315"
                 src="https://www.youtube.com/embed/1TEOcieL3J8?si=7nf2IiMXH6AWOK0I" title="YouTube video player"
                 frameborder="0"
@@ -99,7 +99,8 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section class="store" style="background-image: url(img/fondo_store.png);">
+        <section class="store">
+            <h2 class="store-title">BOOMSTORE</h2>
             <div class="row elements">
                 <div class="col-md-4" data-aos="zoom-out-up">
                     <img src="img/store.png" alt="Producto">
@@ -121,21 +122,31 @@
                     <a href=""><button class="whats" data-product="Producto 3">Ir a whatsapp</button></a>
                 </div>
             </div>
+            <a href="galeria.html"><button>Ver Más</button></a>
 
         </section>
 
     </main>
-    <footer id="contacto">
-        <div class="pie_pagina" style="background-image: url(img/fondo-video.jpg);">
-            <h2>Conectate con nosotros</h2>
-            <p>Siguenos en nuestras redes sociales</p>
-            <ul class="redes">
-                <li><a href="https://www.facebook.com/RetroboomColecciones"><i class="fi fi-brands-facebook"></i></a>
-                </li>
-                <li><a
-                        href="https://www.instagram.com/retroboomcolecciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                            class="fi fi-brands-instagram"></i></a></li>
-            </ul>
+
+    <footer class="qt-footer">
+        <a href="#qtBody" class="qt-btn-rhombus qt-btn-ghost qt-link-top qwsmoothscroll"><i class="fi fi-sr-angle-up"></i></a>
+        <div class="row elements-footer">
+            <div class="col-md-4 videss">
+                <h4>Desarrollado por:</h4>
+                <img src="img/videss.png" alt="">                
+            </div>
+            <div class="col-md-4 boom-footer">
+                <ul class="redes">
+                    <li><a href=""><i class="fi fi-brands-facebook"></i></a></li>
+                    <li><a href=""><i class="fi fi-brands-instagram"></i></a></li>
+                </ul>
+                <img src="img/LogoBlanco.png" alt="">
+               <br> <sub>Copyright © 2024. Todos los derechos reservados.
+                </sub>
+            </div>
+            <div class="col-md-4 imagen-caricatura">
+                <img src="img/bart.png" alt="">
+            </div>
         </div>
     </footer>
 

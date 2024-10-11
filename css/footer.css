@@ -1,68 +1,132 @@
-.pie_pagina{
-    background-size: cover;
-    background-repeat: no-repeat;    
+.qt-btn-rhombus {
+    display: inline-block;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    top: -20px; 
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); 
+    background-color: #000000; 
+    z-index: 1;
+}
+
+.qt-btn-rhombus i {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg); 
+    font-size: 20px;
+    position: relative;
+}
+
+.qt-footer {
+    border-top: solid white;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
-    padding-block: 90px;
-    color: black;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
 }
-.pie_pagina h2,
-.pie_pagina p{
-    font-weight: 700;
+
+.qt-footer:before {
+    content: "";
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #ffffff; 
+    transform: translateX(-50%);
 }
-.pie_pagina h2{
-    font-size: 50px;
+.elements-footer{
+    margin: 50px;
 }
-.pie_pagina p{
-    font-size: 25px;
+.videss{
+    text-align: left;
 }
-.pie_pagina ul{
-    list-style-type: none;
-    margin-block: 40px;
+.videss h4{
+    font-size: 2vw;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.videss img{
+    width: 20vw;
+    position: relative;
+    bottom: 4vw;
+}
+.boom-footer{
+    z-index: 3;
+    flex-direction: column;
+}
+.boom-footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
-    font-size: 41px;
-    color: white;
+    font-size: 2vw;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
 }
-.pie_pagina ul li{
-    background-color: blueviolet;
-    padding: 9px;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    transition: .4s;
+.boom-footer img{
+    width: 25vw;
 }
-.pie_pagina ul li:hover{
-    background-color: #00ff93;
+.imagen-caricatura{
+    text-align: right;
 }
-.pie_pagina ul li i{
-    transition: .4s;
+.imagen-caricatura img{
+    width: 10vw;
+    position: relative;
+    left: 65px;
 }
-.pie_pagina ul li i:hover{
-    color: black;
+@media screen and (max-width: 767px) {
+    .elements-footer{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .videss{
+        text-align: center;
+    }
+    .videss h4{
+        font-size: 2.4vw;
+    }
+    .videss img{
+        width: 30vw;
+    }
+    .boom-footer img{
+        width: 40vw;
+    }
+    .boom-footer ul li,
+    .boom-footer sub{
+        font-size: 2vw;
+    }
+    .imagen-caricatura img{
+        bottom: 250px;
+        width: 15vw;
+        left: 15px;
+    }
 }
 @media screen and (max-width: 600px) {
-    .pie_pagina h2{
-        font-size: 30px;
-    }
-    .pie_pagina p{
+    .videss h4{
         font-size: 15px;
     }
-    .pie_pagina ul{
-        font-size: 31px;
+    .videss img{
+        width: 200px;
     }
-    .pie_pagina ul li{
-        width: 55px;
-        height: 55px;
+    .boom-footer img{
+        width: 300px;
+    }
+    .boom-footer ul li,
+    .boom-footer sub{
+        font-size: 15px;
+    }
+    .imagen-caricatura img{
+        bottom: 250px;
+        width: 15vw;
+        left: 15px;
     }
 }
-@media screen and (max-width: 600px) {
-    .pie_pagina h2{
-        font-size: 25px;
-    }
-    .pie_pagina p{
-        font-size: 14px;
-    }
 
-}
