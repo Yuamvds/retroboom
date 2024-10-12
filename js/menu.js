@@ -1,15 +1,8 @@
-const nav = document.querySelector("#menu");
-const abrir = document.querySelector("#open-icon");
-const cerrar = document.querySelector("#close-icon");
+document.addEventListener('DOMContentLoaded', function(){
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuList = document.querySelector('.menu-list');
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");  
-    abrir.style.display = "none";  
-    cerrar.style.display = "block";  
-});
-
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");  
-    abrir.style.display = "block"; 
-    cerrar.style.display = "none";  
-});
+    menuToggle.addEventListener('click', function(){
+        menuList.classList.toggle('visible');
+    })
+})

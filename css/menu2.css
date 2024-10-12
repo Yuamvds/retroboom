@@ -1,23 +1,24 @@
 .encabezado{
     display: flex;
-    justify-content: space-around;
-    background-color: black;
-    height: 33vw;
-    padding: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
     font-size: 2vw;
     font-weight: 700;
+    position: relative;
+    top: 20px;
 }
 .encabezado .logo img{
     width: 25vw;
     position: relative;
-    bottom: 3vw;
+    bottom: 1.2vw;
 }
 .encabezado .logo:hover{
     border: none;
 }
 .encabezado a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: ease .09s;
     z-index: 7;
 }
@@ -31,7 +32,12 @@
     gap: 50px;
     z-index: 7;
     position: relative;
-    bottom: 1vw;
+    bottom: 1.2vw;
+    margin: 0;
+}
+.menu-list li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 .encabezado a:hover{
     border-bottom: solid white 3px;
@@ -47,40 +53,11 @@
 .fondo-banner-celular{
     display: none;
 }
-.encabezado .menu-toggle{
-    cursor: pointer;
-}
 @media screen and (max-width: 1000px) {
     .encabezado .menu-list{
-        text-align: center;
         display: none;
-        flex-direction: column;
-        position: absolute;
-        border-top: solid 2px rgba(0, 0, 0, 0.349);
-        top: 105px;
-        padding: 30px;
-        right: 0;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        box-sizing: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 9;
-        gap: 90px;
     }
-    .encabezado .menu-list .redes{
-        display: flex;
-        justify-content: center;
-    }
-    .encabezado .menu-list li a{
-        color: black;
-        font-size: 2.1rem;
-    }
-    .encabezado .menu-list.visible{
-        display: flex;
-        opacity: 1;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-        visibility: visible;
-    }
-    .encabezado .menu-toggle svg{
+    .encabezado svg{
         display: block;
         color: black;
     }
@@ -111,8 +88,5 @@
     }
     .encabezado .logo-celular img{
         width: 280px;
-    }
-    .encabezado .menu-list{
-        top: 100px;
     }
 }
