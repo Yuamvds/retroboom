@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
             pauseIcon.classList.add("hide");
         }
     });
-  });
+  })
   

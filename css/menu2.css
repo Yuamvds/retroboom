@@ -19,7 +19,7 @@
 .encabezado a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    transition: ease .09s;
+    transition: ease .08s;
     z-index: 7;
 }
 .encabezado div{

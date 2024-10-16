@@ -1,7 +1,7 @@
 .qt-btn-rhombus {
     display: inline-block;
-    width: 9vw;
-    height: 9vw;
+    width: 120px;
+    height: 120px;
     position: absolute;
     top: -20px; 
     left: 50%;
@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2vw;
-    gap: 30px;
+    gap: 29px;
     list-style: none;
     padding: 0;
 }

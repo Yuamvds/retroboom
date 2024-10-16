@@ -7,4 +7,4 @@ whatsButton.forEach(button => {
 
         window.open(whatsappLink, '_blank');
     });
-});
+})

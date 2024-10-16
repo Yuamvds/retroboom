@@ -152,7 +152,7 @@ a{
     background-color: blueviolet;
     color: white;
     border-radius: 3px;
-    transition: .4s;
+    transition: .3s;
 }
 .galeria-colecciones button:hover{
     background-color: #00ff93;
@@ -253,7 +253,10 @@ a{
     width: 100%;
     background: linear-gradient(to bottom, rgb(17, 17, 17), rgb(17, 17, 17), rgb(17, 17, 17), black, black, black);
     margin-top: 15vw;
-    padding-block: 10vw;
+}
+.store img{
+    width: 40vw;
+    padding-block: 35px;
 }
 .store .store-title{
     margin: 0;
