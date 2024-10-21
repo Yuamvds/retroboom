@@ -26,7 +26,9 @@
     display: flex;
     position: relative;
     top: 2vw;
-    left: 8vw;
+    right: -13vw;
+    float: left;
+    margin-right: 10px;
     flex-direction: column;
     gap: 15px;
 }
@@ -71,6 +73,16 @@
 .encabezado .menu-toggle{
     cursor: pointer;
     z-index: 1000;
+}
+@media screen and (max-width: 1500px) {
+    .encabezado div.redes{
+        right: -11vw;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .encabezado div.redes{
+        right: -4.4em;
+    }
 }
 @media screen and (max-width: 1000px) {
     .encabezado .menu-list{
@@ -128,6 +140,7 @@
     }
 
 }
+
 @media screen and (max-width: 500px){
     .fondo-banner-celular{
         display: block;
