@@ -57,10 +57,11 @@
 .videss h4{
     font-size: 12px;
     position: relative;
+    bottom: 4vw;
 }
 .videss img{
-    width: 6vw;
-    top: 2.5vw;
+    width: 15vw;
+    top: 2vw;
     margin-bottom: 40px;
     position: relative;
 }
@@ -133,7 +134,7 @@
     bottom: 3vw;
    }
    .videss img{
-    width: 3em;
+    width: 10em;
     margin-bottom: 10px;
     
    }
