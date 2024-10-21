@@ -96,6 +96,8 @@ button a:hover {
     }
     .titulo-evento{
         display: block;
+        position: relative;
+        bottom: 3vw;
     }
     .evento-image{
         width: 35vw;
@@ -110,20 +112,14 @@ button a:hover {
         margin-top: 80px;
         margin-inline: 30px;
     }
-    .titulo-evento h2::before{
-        content: '|';
-        position: absolute;
-        right: 250px;
 
-    }
-    .titulo-evento{
-        position: relative;
-        bottom: 8vw;
-        left: 15vw;
-    }
     .fecha-hora{
         position: relative;
-        bottom:7vw;
+        bottom:5vw;
+    }
+    .fecha-hora .hora{
+        position: relative;
+        bottom: 2vw;
     }
     .precios{
         position: relative;
@@ -147,13 +143,10 @@ button a:hover {
         width: 100%;
         height: auto;
     }
-    .titulo-evento h2::before{
-        display: none;
-    }
     .evento-info{
         position: relative;
         bottom: 10vw;
-        height: 50vh;
+        height: 60vh;
     }
     .event .evento-image{
         display: block;
@@ -169,8 +162,7 @@ button a:hover {
         font-size: 3em;
     }
     .titulo-evento{
-        bottom: 80px;
-        left: 30vw;
+        bottom: 6vw;
         font-size: 1.1em;
     }
     .fecha sub{
@@ -179,13 +171,13 @@ button a:hover {
         bottom: 7vw;
     }
     .fecha-hora{
-        bottom: 15vw;
+        bottom: 8vw;
     }
     .precios{
-        bottom: 15vw;
+        bottom: 7vw;
     }
     button{
-        bottom: 22vw;
+        bottom: 14vw;
         left: 50vw;
     }
 }
@@ -196,7 +188,6 @@ button a:hover {
     }
     .titulo-evento{
         font-size: 3.3vw;
-        bottom: 14vw;
     }
     .fecha sub{
         font-size: .6em;
@@ -204,7 +195,6 @@ button a:hover {
         bottom: 7vw;
     }
     button{
-        bottom: 22vw;
         left: 45vw;
     }
 }
