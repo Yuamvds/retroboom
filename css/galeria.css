@@ -7,10 +7,10 @@ body{
 }
 a{
     text-decoration: none;
+    color: white;
 }
 .banner-colecciones{
     position: relative;
-    bottom: 10vw;
     width: 100%;
     height: 48vw;
     background-size: cover;
@@ -30,14 +30,81 @@ a{
     font-size: 4.8vw;
 }
 
+@media screen and (max-width: 700px) {
+    .banner-colecciones{
+        height: 60vw;
+    }
+    .banner-colecciones img{
+        display: none;
+    }
+    .banner-colecciones h1{
+        font-size: 8vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .banner-colecciones{
+        height: 90vw;
+    }
+}
+
+.slider{
+    position: relative;
+    margin-top: 10vw;
+    left: 12vw;
+    z-index: 8;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 5vw;
+    width: 75%;
+}
+.slider div img{
+    width: 18vw;
+    text-align: center;
+    border-radius: 2px;
+}
+.slick-slide {
+      margin-inline: 0px;
+}
+.slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+}
+.slick-initialized .slick-slide {
+      display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .slider{
+        margin-top: 10vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .slider div img{
+        width: 24vw;
+    }
+}
+@media screen and (max-width: 470px) {
+    .slider div img{
+        width: 36vw;
+    }
+} 
+
+
+
+
 .colecciones{
-    margin-block: 90px;
+    margin-block: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 20vw;
+    margin-bottom: 400px;
 }
 .colecciones .coleccion{
     background-size: cover;
+    margin-bottom: 30px;
+    height: 20vw;
 }
 .coleccion .info{
     width: 25vw;
@@ -48,7 +115,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: .2vw;
-    height: 8vw;
+    height: 90px;
     padding: 15px;
     transition: .4s;
     font-weight: 650;
@@ -65,7 +132,7 @@ a{
     padding: 4px;
     text-align: center;
     background-color: #FF0E1F;
-    width: 10vw;
+    width: 15vw;
     font-size: .8em;
 }
 .ver:hover{
@@ -73,5 +140,57 @@ a{
     color: black;
 }
 .coleccion .info:hover{
-    height: 15vw;
+    height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    .colecciones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .colecciones .coleccion{
+        height: 25vw;
+    }
+    .coleccion .info{
+        width: 40vw;
+    }
+    .coleccion .info:hover{
+        height: 25vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .colecciones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .colecciones .coleccion{
+        height: 400px;
+        margin-inline: 20px;
+    }
+    .coleccion .info{
+        width: 60vw;
+    }
+    .coleccion .info:hover{
+        height: 30vw;
+    }
+    .ver{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .colecciones .coleccion{
+        height: 250px;
+    }
+    .coleccion .info{
+        width: 70vw;
+    }
+    .coleccion .info:hover{
+        height: 38vw;
+    }
+}
+@media screen and (max-width: 400px){
+    .colecciones .info:hover{
+        height: 50vw;
+    }
+    .ver{
+        width: 40vw;
+    }
 }
