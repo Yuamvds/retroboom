@@ -182,7 +182,9 @@ button a:hover {
     }
 }
 @media screen and (max-width: 500px) {
-    
+    .evento-info{
+        height: auto;
+    }
     .fecha{
         font-size: 9.6vw;
     }
