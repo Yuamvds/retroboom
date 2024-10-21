@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%) rotate(45deg); 
     background-color: #000000; 
-    z-index: 1;
+    z-index: 0;
 }
 
 .qt-btn-rhombus i {
@@ -43,24 +43,33 @@
     transform: translateX(-50%);
 }
 .elements-footer{
-    margin: 50px;
+    margin-bottom: 70px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .videss{
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .videss h4{
-    font-size: 2vw;
-    font-weight: 800;
-    padding-left: 20px;
+    font-size: 12px;
+    position: relative;
 }
 .videss img{
-    width: 20vw;
+    width: 6vw;
+    top: 2.5vw;
+    margin-bottom: 40px;
     position: relative;
-    bottom: 4vw;
 }
 .boom-footer{
     z-index: 3;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .boom-footer ul{
     display: flex;
@@ -73,56 +82,60 @@
 }
 .boom-footer img{
     width: 25vw;
+    margin: 0;
 }
-.imagen-caricatura{
-    text-align: right;
+.icons-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.imagen-caricatura img{
-    width: 10vw;
-    position: relative;
-    left: 65px;
+.icons-redes ul{
+    font-size: 2.8vw;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
 }
-@media screen and (max-width: 767px) {
-    .elements-footer{
-        margin: 0;
-        margin-top: 50px;
-    }
-    .videss{
-        text-align: center;
-    }
-    .videss h4{
-        font-size: 2.4vw;
-    }
-    .videss img{
-        width: 30vw;
-    }
-    .boom-footer img{
-        width: 40vw;
-    }
-    .boom-footer ul li,
-    .boom-footer sub{
-        font-size: 2vw;
-    }
-    .imagen-caricatura img{
-        bottom: 250px;
-        width: 15vw;
-        left: 15px;
-    }
+.elements-footer2{
+    display: none;
 }
 @media screen and (max-width: 600px) {
-    .videss h4{
-        font-size: 15px;
-    }
-    .videss img{
-        width: 200px;
-    }
-    .boom-footer img{
-        width: 300px;
-    }
-    .boom-footer ul li,
-    .boom-footer sub{
-        font-size: 15px;
-    }
-
+   .elements-footer{
+    display: none;
+   }
+   .elements-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    top: 5vw;
+    margin-bottom: 80px;
+   }
+   .elements-footer2 .boom-footer img{
+    width: 20em;
+   }
+   .icons-redes{
+    margin-top: 2vw;
+   }
+   .redes{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .redes li a{
+    font-size: 2em;
+   }
+   .videss{
+    position: relative;
+    bottom: 3vw;
+   }
+   .videss img{
+    width: 3em;
+    margin-bottom: 10px;
+    
+   }
 }
 

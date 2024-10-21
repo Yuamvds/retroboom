@@ -84,6 +84,7 @@ a{
     width: 25vw;
     text-align: center;
   }
+
 .slick-slide {
       margin-inline: 0px;
 }
@@ -127,16 +128,21 @@ a{
     align-items: center;
     color: whitesmoke;
 }
-.galeria-colecciones h2{
-    margin-top: 60px;
-    font-weight: 700;
-    font-size: clamp(3rem, 4vw, 2rem);
+.galeria-colecciones img{
+    padding-top: 5vw;
+    width: 500px;
+}
+.galeria-colecciones .fotos img{
+    transition: .4s;
+}
+.galeria-colecciones .fotos img:hover{
+    transform: scale(1.07);
 }
 .galeria-colecciones .fotos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
-    margin-top: 80px;
+    margin-top: 2vw;
 }
 .galeria-colecciones .fotos img{
     width: 20vw;
@@ -186,6 +192,9 @@ a{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    .galeria-colecciones img{
+        width: 80vw;
+    }
     .galeria-colecciones .fotos img{
         width: 80vw;
     }
@@ -221,6 +230,9 @@ a{
         width: 75vw;
     }
 }
+@media screen and (max-width: 450px){
+
+}
 
 .video{
     width: 100%;
@@ -243,10 +255,18 @@ a{
     }
 }
 @media screen and (max-width: 450px) {
+    .video{
+        background-position: left;
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .video iframe{
         border: none;
     }
 }
+
 
 .store{
     text-align: center;
@@ -255,8 +275,9 @@ a{
     margin-top: 15vw;
 }
 .store img{
-    width: 40vw;
-    padding-block: 35px;
+    width: 500px;
+    padding-block: 5vw;
+    
 }
 .store .store-title{
     margin: 0;
@@ -272,7 +293,9 @@ a{
 
 .store .elements div img{
     width: 25vw;
-    margin-bottom: 50px;
+    padding: 0;
+    border-radius: 10px;
+    margin-bottom: 2vw;
 }
 .store .elements{
     color: white;
@@ -285,17 +308,20 @@ a{
     width: 20vw;
     height: 4vw;
     border: none;
+    margin: 0;
+    margin-top: 2vw;
     background-color: #8a2be2;
     color: white;
     font-size: 2vw;
     font-weight: 650;
     transition: .4s;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
 }
 .store .elements div button:hover{
     background-color: #00ff93;
     color: black;
 }
+
 @media screen and (max-width: 767px) {
     .store .elements div{
         margin-bottom: 8vw;
@@ -312,12 +338,18 @@ a{
         font-size: 3vw;
     }
 }
+@media screen and (max-width: 500px){
+    .store img{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 450px) {
+
     .store .elements div{
         margin-bottom: 8vw;
     }
     .store .elements div img{
-        width: 55vw;
+        width: 65vw;
     }
     .store .elements div p{
         font-size: 20px;
@@ -331,7 +363,7 @@ a{
 
 
 .store button{
-    margin-block: 90px;
+    margin-block: 10vw;
     border: none;
     width: 30vw;
     height: 5vw;
@@ -350,5 +382,62 @@ a{
     .store button{
         width: 40vw;
         height: 50px;
+    }
+}
+
+
+
+.marcas{
+    max-width: 100%;
+    height: 20vw;
+    padding-block: 4vw;
+    margin-block: 5vw;
+}
+.logo-slider img{
+    width: 60%;
+}
+.logo-slider .item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-slider .slick-slide{
+    margin: 15px;
+}
+.marcas .slick-dots li.slick-active button:before{
+    color: #000000;
+}
+.marcas .slick-dots li button:before{
+    font-size: 12px;
+}
+.marcas .slick-next:before,
+.marcas .slick-prev:before{
+    color: #0594FC !important;
+    font-size: 24px;
+}
+.item:hover{
+    display: block;
+    transition: all ease 0.3s;
+    transform: scale(1.1) translateY(-5px);
+}
+@media screen and (max-width: 1110px) {
+    .marcas .slick-next:before,
+    .marcas .slick-prev:before{
+    display: none;
+}
+}
+@media screen  and (max-width: 800px){
+    .marcas{
+        max-width: 200vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo-slider img{
+        width: 15vw;
+    }
+    .marcas{
+        height: 25vw;
+        margin-block: 10vw;
     }
 }

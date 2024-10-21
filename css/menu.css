@@ -16,6 +16,7 @@
     border: none;
 }
 .encabezado a{
+    position: relative;
     text-decoration: none;
     color: white;
     transition: ease .09s;
@@ -33,8 +34,20 @@
     position: relative;
     bottom: 1vw;
 }
-.encabezado a:hover{
-    border-bottom: solid white 3px;
+.encabezado li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 0;
+    height: 2px;
+    transition: .4s;
+}
+.encabezado li .select::before{
+    width: 100%;
+}
+.encabezado li a:hover::before{
+    width: 100%;
 }
 .encabezado svg{
     z-index: 7;
@@ -62,9 +75,10 @@
         right: 0;
         background-color: rgb(255, 255, 255);
         width: 100%;
+        height:190vw;
         box-sizing: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 9;
-        gap: 90px;
+        gap: 50px;
     }
     .encabezado .menu-list .redes{
         display: flex;

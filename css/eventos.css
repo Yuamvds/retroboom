@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(33, 33, 33);
+    background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(14, 14, 14, 1) 9%, rgba(6, 6, 8, 1) 43%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 1) 66%, rgba(14, 14, 14, 1) 91%, rgba(33, 33, 33, 1) 100%);
+    overflow-x: hidden;
+}
+
+
+.event {
+    display: flex;
+    width: 100%;
+}
+
+.evento-image {
+    width: 40vw;
+    margin: 80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.evento-image img {
+    width: 100%;
+    box-shadow: 7px 8px 10px rgba(3, 1, 1, 0.904);
+}
+
+
+.evento-info {
+    margin: 50px;
+    margin-top: 90px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fecha {
+    font-size: 4vw;
+    margin: 0;
+}
+
+.fecha sub {
+    font-size: 2vw;
+    position: relative;
+    bottom: 3vw;
+    color: blueviolet;
+}
+
+.titulo-evento {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    font-size: 1em;
+}
+
+.titulo-evento .precio {
+    color: #009bab;
+}
+
+.fecha-hora {
+    margin-top: 50px;
+    font-size: 1.3em;
+}
+.fecha-hora p{
+    margin: 0;
+}
+.precios{
+    margin-top: 50px;
+    font-size: 1.3em;
+}
+button {
+    margin-top: 90px;
+    border: none;
+    padding-block: 20px;
+    padding-inline: 30px;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 750;
+    background-color: blueviolet;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #00ff93;
+}
+
+button a:hover {
+    color: black;
+}
