@@ -17,27 +17,32 @@
 <body>
     <header>
         <nav class="encabezado" id="inicio">
-            <a href="index.html" class="logo"><img src="img/boomstorelogo.png" alt="Logotipo de Retroboom"></a>
+            <a href="index.html" class="logo"><img src="img/LogoBlanco.png" alt="Logotipo de Retroboom"></a>
             <a href="index.html" class="logo-celular"><img src="img/LogoNegro.png" alt="Logotipo de Retroboom"></a>
             <ul class="menu-list" id="menu">
-                <li><a href="index.html" style="border-bottom: solid white 3px;">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="tienda.html" class="select">Boomstore</a></li>
+                <li><a href="https://wa.me/42193311">Contacto</a></li>
                 <div class="redes">
-                    <li><a href="https://www.facebook.com/RetroboomColecciones" target="_blank"><i
+                    <li><a href="https://www.facebook.com/RetroboomColecciones"><i
                                 class="fi fi-brands-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/retroboomcolecciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank"><i class="fi fi-brands-instagram"></i></a></li>
+                            ><i class="fi fi-brands-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/RetroboomColecciones"><i
+                                class="fi fi-brands-tik-tok"></i></a></li>
+                    <li><a href="https://www.facebook.com/RetroboomColecciones"><i
+                                class="fi fi-brands-youtube"></i></a></li>
                 </div>
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" id="btn_menu" width="45" height="45" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
         </nav>
-        <hr>
     </header>
     <main>
         <div class="tienda">
@@ -81,24 +86,54 @@
     <footer class="qt-footer">
         <a href="#inicio" class="qt-btn-rhombus qt-btn-ghost qt-link-top qwsmoothscroll"><i
                 class="fi fi-sr-angle-up"></i></a>
-        <div class="row elements-footer">
-            <div class="col-md-4 videss">
-                <img src="img/videss.png" alt="Logotipo de Videss Smart">
+        <div class="elements-footer">
+            <div class="videss">
+                <img src="img_marcas/white_name.png" alt="Logotipo de Videss Smart">
                 <h4>Desarrollado por:</h4>
             </div>
-            <div class="col-md-4 boom-footer">
+            <div class="boom-footer">
                 <img src="img/LogoBlanco.png" alt="Logotipo de Retroboom">
-                <br> <sub>Copyright © 2024. Todos los derechos reservados.
+                <br> <sub>Copyright 2024. Todos los derechos reservados.
                 </sub>
             </div>
-            <div class="col-md-4 icons-redes">
+            <div class="icons-redes">
                 <ul class="redes">
-                    <li><a href="https://www.facebook.com/RetroboomColecciones"><i class="fi fi-brands-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/retroboomcolecciones/"><i class="fi fi-brands-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/RetroboomColecciones" target="_blank"><i
+                                class="fi fi-brands-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/retroboomcolecciones/" target="_blank"><i
+                                class="fi fi-brands-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@retroboomcolecciones?lang=es" target="_blank"><i
+                                class="fi fi-brands-tik-tok"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCs__ZyZnI0D2oIBxK3exfSw" target="_blank"><i
+                                class="fi fi-brands-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
+        <div class="elements-footer2">
+            <div class="boom-footer">
+                <img src="img/LogoBlanco.png" alt="Logotipo de Retroboom">
+                <br> <sub>Copyright 2024. Todos los derechos reservados.
+                </sub>
+            </div>
+            <div class="icons-redes">
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/RetroboomColecciones" target="_blank"><i
+                                class="fi fi-brands-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/retroboomcolecciones/" target="_blank"><i
+                                class="fi fi-brands-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@retroboomcolecciones?lang=es" target="_blank"><i
+                                class="fi fi-brands-tik-tok"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCs__ZyZnI0D2oIBxK3exfSw" target="_blank"><i
+                                class="fi fi-brands-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="videss">
+                <img src="img_marcas/white_name.png" alt="Logotipo de Videss Smart">
+                <h4>Desarrollado por:</h4>
+            </div>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

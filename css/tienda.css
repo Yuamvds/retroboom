@@ -15,7 +15,7 @@ body{
     background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(14, 14, 14, 1) 9%, rgba(6, 6, 8, 1) 43%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 1) 66%, rgba(14, 14, 14, 1) 91%, rgba(33, 33, 33, 1) 100%);
 }
 .tienda{
-    margin-block: 70px;
+    margin-block: 100px;
     margin-inline: 60px;
 }
 .tienda .cards{
@@ -24,32 +24,37 @@ body{
     grid-template-rows: auto;
 }
 .card{
-    background-color: rgb(218, 218, 218);
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     width: 20vw;
     box-shadow: 5px 10px 10px rgb(14, 14, 14);
 }
 .info{
     display: flex;
     flex-direction: column;
-    padding-block: 50px;
-    padding-left: 20px;
-    gap: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    gap: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.info h2{
+    font-size: 1.9vw;
+    text-wrap: wrap;
+}
 .info p{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .info button{
-    width: 10vw;
-    padding-block: 15px;
+    width: 70%;
+    padding-block: .3vw;
     border: none;
     border-radius: 5px;
     background-color: blueviolet;
     transition: all .3s;
 }
 .info button a{
-    font-size: 1.6em;
+    font-size: 1em;
     color: whitesmoke;
     text-decoration: none;
     transition: all .3s;
@@ -75,4 +80,52 @@ body{
 }
 .tienda .cards .card img:hover{
     opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .tienda{
+        margin-inline: 10px;
+    }
+    .tienda .cards{
+        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .card{
+        display: grid;
+        grid-template-areas: 
+        'fondo info';
+        margin-bottom: 5vw;
+        width: 45vw;
+        height: 100%;
+    }
+    .info button{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .tienda .cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .tienda .cards .card{
+        width: 100%;
+    }
+    .card div{
+        width: 90vw;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info p{
+        font-size: 1.2em;
+    }
+    .info h2{
+        font-size: 4.4vw;
+    }
+    .tienda .cards .card div{
+        width: 40vw;
+    }
 }

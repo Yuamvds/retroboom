@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 body {
     background: rgb(33, 33, 33);
@@ -61,6 +65,7 @@ body {
 }
 .fecha-hora p{
     margin: 0;
+    margin-bottom: 20px;
 }
 .precios{
     margin-top: 20px;
