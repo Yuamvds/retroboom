@@ -63,3 +63,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 15%, rgba(2
 audio{
     display: none;
 }
+#currentSong{
+    position: absolute;
+    left: 95px;
+    color: white;
+}

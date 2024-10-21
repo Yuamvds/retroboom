@@ -15,7 +15,6 @@ body {
     display: flex;
     width: 100%;
 }
-
 .evento-image {
     width: 40vw;
     margin: 80px;
@@ -30,8 +29,7 @@ body {
 
 
 .evento-info {
-    margin: 50px;
-    margin-top: 90px;
+    margin-top: 65px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -50,9 +48,7 @@ body {
 
 .titulo-evento {
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .titulo-evento .precio {
@@ -60,18 +56,18 @@ body {
 }
 
 .fecha-hora {
-    margin-top: 50px;
-    font-size: 1.3em;
+    margin-top: 30px;
+    font-size: 1.1em;
 }
 .fecha-hora p{
     margin: 0;
 }
 .precios{
-    margin-top: 50px;
-    font-size: 1.3em;
+    margin-top: 20px;
+    font-size: 1.1em;
 }
 button {
-    margin-top: 90px;
+    margin-top: 30px;
     border: none;
     padding-block: 20px;
     padding-inline: 30px;
@@ -93,4 +89,131 @@ button:hover {
 
 button a:hover {
     color: black;
+}
+@media screen and (max-width: 800px) {
+    .event{
+        height: auto;
+    }
+    .titulo-evento{
+        display: block;
+    }
+    .evento-image{
+        width: 35vw;
+        margin: 0;
+        margin-left: 20px;
+    }
+    .evento-image img{
+        margin-top: 90px;
+        max-width: 250px;
+    }
+    .evento-info{
+        margin-top: 80px;
+        margin-inline: 30px;
+    }
+    .titulo-evento h2::before{
+        content: '|';
+        position: absolute;
+        right: 250px;
+
+    }
+    .titulo-evento{
+        position: relative;
+        bottom: 8vw;
+        left: 15vw;
+    }
+    .fecha-hora{
+        position: relative;
+        bottom:7vw;
+    }
+    .precios{
+        position: relative;
+        bottom:6vw;
+    }
+    button{
+        position: relative;
+        left: 25vw;
+        bottom: 14vw;
+        padding-block: 2vw;
+        padding-inline: 3vw;
+        font-size: 1em;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .event{
+        display: block;
+        background-color: rgb(56, 56, 56);
+        border: solid;
+        width: 100%;
+        height: auto;
+    }
+    .titulo-evento h2::before{
+        display: none;
+    }
+    .evento-info{
+        position: relative;
+        bottom: 10vw;
+        height: 50vh;
+    }
+    .event .evento-image{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .evento-image img{
+        margin-top: 20px;
+        max-width:60%;
+    }
+    .fecha{
+        font-size: 3em;
+    }
+    .titulo-evento{
+        bottom: 80px;
+        left: 30vw;
+        font-size: 1.1em;
+    }
+    .fecha sub{
+        font-size: .6em;
+        position: relative;
+        bottom: 7vw;
+    }
+    .fecha-hora{
+        bottom: 15vw;
+    }
+    .precios{
+        bottom: 15vw;
+    }
+    button{
+        bottom: 22vw;
+        left: 50vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .fecha{
+        font-size: 9.6vw;
+    }
+    .titulo-evento{
+        font-size: 3.3vw;
+        bottom: 14vw;
+    }
+    .fecha sub{
+        font-size: .6em;
+        position: relative;
+        bottom: 7vw;
+    }
+    button{
+        bottom: 22vw;
+        left: 45vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .evento-info{
+        height: 70vh;
+    }
+    button{
+        left: 0;
+        bottom: 0;
+    }
 }
