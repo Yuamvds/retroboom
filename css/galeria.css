@@ -27,7 +27,7 @@ a{
     text-wrap: wrap;
     color: whitesmoke;
     font-weight: 800;
-    font-size: 4.8vw;
+    font-size: 4.9vw;
 }
 
 @media screen and (max-width: 700px) {
@@ -154,8 +154,12 @@ a{
         width: 40vw;
     }
     .coleccion .info:hover{
-        height: 25vw;
+        height: initial;
     }
+    .info .text{
+        display: none;
+    }
+
 }
 @media screen and (max-width: 600px) {
     .colecciones{
@@ -169,7 +173,10 @@ a{
         width: 60vw;
     }
     .coleccion .info:hover{
-        height: 30vw;
+        height: initial;
+    }
+    .info .text{
+        display: none;
     }
     .ver{
         width: 25vw;
@@ -183,12 +190,19 @@ a{
         width: 70vw;
     }
     .coleccion .info:hover{
-        height: 38vw;
+        height: initial;
     }
+    .info .text{
+        display: none;
+    }
+
 }
 @media screen and (max-width: 400px){
-    .colecciones .info:hover{
-        height: 50vw;
+    .coleccion .info:hover{
+        height: initial;
+    }
+    .info .text{
+        display: none;
     }
     .ver{
         width: 40vw;
