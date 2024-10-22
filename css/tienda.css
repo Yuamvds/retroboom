@@ -6,10 +6,7 @@
     box-sizing: border-box;
     max-width: 100%;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
 body{
     background: rgb(33, 33, 33);
     background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(14, 14, 14, 1) 9%, rgba(6, 6, 8, 1) 43%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 1) 66%, rgba(14, 14, 14, 1) 91%, rgba(33, 33, 33, 1) 100%);
@@ -53,7 +50,7 @@ body{
     background-color: blueviolet;
     transition: all .3s;
 }
-.info button a{
+.info button {
     font-size: 1em;
     color: whitesmoke;
     text-decoration: none;
@@ -61,8 +58,6 @@ body{
 }
 .info button:hover{
     background-color: #00ff93;
-}
-.info button a:hover{
     color: black;
 }
 .tienda .cards .card div{
